@@ -48,4 +48,5 @@ print("P = ")
 for i in range(len(p)):
 	x = round_complex(w**i)
 	y = round_complex(evaluate(p, w**i))
+	assert pts[i] == y
 	print(f"{x:>16}\t---->\t{y:<}")
